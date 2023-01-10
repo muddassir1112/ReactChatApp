@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { SignIn } from './component/SignIn';
 import { auth, db } from './firebase';
@@ -8,7 +8,6 @@ import { SendMessage } from './component/SendMessage';
 import { SignOut } from './component/SignOut';
 
 function App() {
-  const scroll = useRef() //to move to end of the chat automatically
   const [user] = useAuthState(auth as any);  // firebase hooks (useAuthState)
   const [messages, setMessages] = useState([]); // state array to print the messages
   // useEffect Hook used to load the messages in the array 
@@ -21,11 +20,6 @@ function App() {
     <>
     {/* messages array passed as prop to the chat component */}
     {user ? <Chat chat = {messages} /> : <SignIn/>}
-    <SendMessage scroll = {scroll}/>
-    <div className="signOut_container">
-        <SignOut />
-      </div>
-    <div ref = {scroll as any}></div>
     </>
   );
 }

@@ -1,7 +1,19 @@
 /* Sign In Button Styling */
+.signIn_container {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  padding: 1% 0% 5% 5%;
+  margin: 12% 0% 0% 35%;
+  width: 33%;
+}
+.signIn_container > h2 {
+  margin-bottom: 8%;
+}
 .google-btn {
   width: 184px;
   height: 42px;
+  margin-top: 2%;
   background-color: #4285f4;
   border-radius: 2px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
@@ -41,7 +53,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 /* User Avatar Styling */
-img{
+img {
   width: 45px;
   height: 45px;
   border-radius: 50%;

@@ -7,8 +7,12 @@ export const SignOut = () => {
   };
   return (
     <div>
-      <a href="#0" onClick={handleLogOut} className="btn btn-danger btn-lg">
-        <span className="glyphicon glyphicon-log-out"></span> Log out
+      <a
+        href="#0"
+        onClick={handleLogOut}
+        className="btn btn-danger btn-lg btn-logout"
+      >
+        Log out
       </a>
     </div>
   );

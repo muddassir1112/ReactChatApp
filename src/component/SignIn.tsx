@@ -9,7 +9,9 @@ export const SignIn = () => {
     auth.signInWithPopup(provider);
   };
   return (
-    <div>
+    <div className="signIn_container">
+      <h2>React Chat Application</h2>
+      <small>Please Signin to Chat</small>
       <div className="google-btn">
         <div className="google-icon-wrapper">
           <img

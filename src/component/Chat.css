@@ -1,9 +1,15 @@
 /* signout div */
 .signOut_container {
+  margin-bottom: 2%;
   text-align: center;
+}
+.btn-logout {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 /* wrapper div for all component */
 .container {
+  font-family: "Roboto", sans-serif;
   max-width: 1140px;
 }
 .input {
