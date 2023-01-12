@@ -4,8 +4,6 @@ import { SignIn } from './component/SignIn';
 import { auth, db } from './firebase';
 import {useAuthState} from 'react-firebase-hooks/auth'
 import { Chat } from './component/Chat';
-import { SendMessage } from './component/SendMessage';
-import { SignOut } from './component/SignOut';
 
 function App() {
   const [user] = useAuthState(auth as any);  // firebase hooks (useAuthState)

@@ -30,7 +30,7 @@ export const SendMessage = (props: ScrollType) => {
         <input
           type="text"
           className="form-control input"
-          placeholder="Recipient's username"
+          placeholder="Your message !!!"
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
           value={msg}
